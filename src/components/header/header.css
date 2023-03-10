@@ -1,0 +1,120 @@
+header{
+    height: 100vh;
+    padding-top: 3rem;
+    overflow: hidden;
+}
+
+.header_container{
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+/* ===== CTA ======*/
+
+.cta{
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+/* ===== socials ======*/
+
+.header_socials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position:absolute;
+    left:0;
+    bottom: 3rem;
+   
+}
+
+.header_socials::after{
+    content: '';
+    width: 1px;
+    height: 2rem;
+    background:var(--color-primary) ;
+}
+
+
+/* ===== me image ======*/
+.me{
+    background:linear-gradient( var(--color-primary),transparent);
+    margin-top: 5rem;
+    padding: 0;
+    position: relative;
+    width: 22rem;
+    height: 40rem;
+    position: absolute;
+    left:calc(50% - 11rem);
+
+    /* margin-top: 4rem; */
+    border-radius: 12rem 12rem 0 0;
+    /* overflow: hidden; */
+}
+.me img{
+    width: 75%;
+    height: 50%;
+   /* margin:auto;  */
+   margin-top: 2rem;
+   margin-left: 2.5rem;
+   margin-right: 2.5rem;
+}
+/* ===== scroll_down ======*/
+
+.scroll_down{
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+    
+}
+/* Set default font size for mobile devices */
+html {
+    font-size: 16px;
+  }
+  
+  /* Styles for small screens (up to 480px) */
+  @media screen and (max-width : 1024px)  {
+    header{
+        height: 98vh;
+        /* background-color: rgb(16, 221, 204); */
+    }
+   
+  }
+  @media screen and (width <= 768px)  {
+    header{
+        height: 115vh;
+        /* background-color: pink; */
+    }
+    .header_socials,.scroll_down{
+      display: none;
+    }
+    
+  }
+  @media screen and (width <= 465px)  {
+      header{
+          height: 130vh;
+          /* background-color: gold; */
+      }
+     
+    }
+    @media screen and (width <= 376px)  {
+        header{
+            height: 150vh;
+            /* background-color: rgb(242, 0, 255); */
+        }
+        
+      }
+@media screen and (max-width : 320px)  {
+    header{
+        height: 150vh;
+        /* background-color: red; */
+    }
+    
+  }
